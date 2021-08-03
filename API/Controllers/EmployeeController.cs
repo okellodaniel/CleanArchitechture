@@ -16,6 +16,7 @@ namespace API.Controllers
             _employeeService = employeeService;
         }
         
+        [HttpGet(nameof(GetAllEmployees))]
         public IActionResult GetAllEmployees()
         {
             var res = _employeeService.GetAllEmployees();
