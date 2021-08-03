@@ -15,22 +15,22 @@ namespace ServiceLayer.Services
         
         public IEnumerable<Employee> GetAllEmployees()
         {
-            throw new System.NotImplementedException();
+            return _repository.GetAll();
         }
 
         public Employee GetEmployee(int id)
         {
-            throw new System.NotImplementedException();
+            return _repository.Get(id);
         }
 
         public void InsertEmployee(Employee employee)
         {
-            throw new System.NotImplementedException();
+            _repository.insert(employee);
         }
 
         public void updateEmployee(Employee employee)
         {
-            throw new System.NotImplementedException();
+            _repository.Update(employee);
         }
 
         public void DeleteEmployee(int id)
